@@ -1,0 +1,13 @@
+/**index.wxss**/
+
+.list {
+  margin: 30rpx;
+  background-color: #20b3ad;
+  font-size: 32rpx;
+  width: 200rpx;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  border-radius: 20rpx;
+  color: #fff;
+}

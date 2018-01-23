@@ -1,0 +1,5 @@
+<!--index.wxml-->
+<view class="container">
+  <navigator url="../list/list" class='list'>单列表</navigator>
+  <navigator url="../myOrder/myOrder" class='list'>多列表</navigator>
+</view>

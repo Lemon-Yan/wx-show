@@ -1,0 +1,31 @@
+<!--pages/myOrder/myOrder.wxml-->
+<view class='container'>
+  <!-- 订单列表 -->
+  <block wx:for-items="{{carInfoData}}">
+    <view class='card  b-shadow' bindtap='toggleBtn' id="{{item.id}}">
+      <view class='nearCard-fl'>
+        <image src='{{item.imgurl}}'></image>
+      </view>
+      <view class='nearCard-fr'>
+        <view>日期：
+          <text class='c-green'>{{item.useDate}}</text>
+        </view>
+        <view>车型：
+          <text class='c-green'>{{item.cx}}</text>
+        </view>
+        <view>时长：
+          <text class='c-green'>{{item.time}}</text>
+        </view>
+        <view>费用：
+          <text class='c-green'>{{item.feiyong}}</text>
+        </view>
+      </view>
+      <view class='down clearfix {{uhide==item.id?"":"hidden"}}'>
+        <view class='ml30'>启用时间：2018.01.01 11:33</view>
+        <view class='ml30'>结束时间：2018.01.01 11:33</view>
+        <view class='ml30'>租赁地区：舟山市桃花岛景区海湾浪琴</view>
+        <view class='feedBack'>意见反馈</view>
+      </view>
+    </view>
+  </block>
+</view>

@@ -1,0 +1,14 @@
+<!--pages/list/list.wxml-->
+<view class="container"> 
+  <!-- 景区租车卡片 -->
+  <view class='card b-shadow' id="journeyCar">
+    <view class='card-content' bindtap='toggleBtn' id='toggleBtn'>
+      <image mode="widthFix" src='../../images/s.png'></image>
+    </view>
+    <view class='journey-item' wx:if="{{uhide}}">
+      <navigator url="../scenicCar/scenicCar?scenicName=舟山">舟山</navigator>
+      <navigator url="../scenicCar/scenicCar?scenicName=舟山">景区租车</navigator>
+      <navigator url="../scenicCar/scenicCar?scenicName=舟山">景区租车</navigator>
+    </view>
+  </view>
+</view>
